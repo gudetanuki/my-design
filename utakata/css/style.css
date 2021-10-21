@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 100%;
+  color: #3C5EBB;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 30px 60px 30px;
+}
+
+#arrow {
+  vertical-align: bottom;
+  font-weight: bold;
+}
+
+/* ------------------------------------
+ヘッダー部分
+------------------------------------ */
+#header {
+  width: 100%;
+  height: 210px;  
+}
+
+#header .header-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#header .header-wrapper .logo-img {
+  width: 150px;
+  height: 150px;
+  background: url(../img/logo.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 130px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.logo-img::before, .logo-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 130px;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #1da1f2;
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.logo-ing:hover {
+  box-shadow: 0 0 20px #1da1f2;
+}
+
+.logo-img:hover::before, 
+.logo-img:hover::after {
+  animation: pulsate 2s linear infinite;
+}
+
+.logo-img:hover::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#header .header-wrapper ul {
+  display: flex;
+  margin-top: 120px; 
+}
+
+#header .header-wrapper ul li {
+  margin-right: 80px;
+}
+
+#header .header-wrapper ul li a {
+  color: white;
+  font-size: 20px;
+  transition: all 1s;
+}
+
+#header .header-wrapper ul li a:hover {
+  color: #3C5EBB;
+  opacity: 0.8;
+  font-size: 25px;
+  transition: all 1s;
+}
+
+
+#header #svg-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100px;
+  left: 0;
+}
+
+
+/* ----------------------------------------
+トップ部分
+---------------------------------------- */
+#top-wrapper {
+  background: linear-gradient(#ade8e9, #0058fc);
+  height: 850px;
+  margin-top: -40px;
+  padding-top: 60px;
+  position: relative;
+  z-index: -1;
+}
+
+#top-wrapper .dolphin {
+  width: 600px;
+  height: 600px;
+  background-image: url(../img/top_wrap_1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 51% 49% 40% 60% / 33% 63% 37% 67%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 60px;
+}
+
+#top-wrapper .fish1 {
+  width: 250px;
+  height: 250px;
+  background: white;
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  background-image: url(../img/top_wrap_2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 65% 35% 66% 34% / 51% 63% 37% 49%; 
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+#top-wrapper .fish2 {
+  width: 150px;
+  height: 150px;
+  background: white;
+  position: absolute;
+  top: 150px;
+  left: 700px;
+  background-image: url(../img/top_wrap_3.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 32% 68% 54% 46% / 49% 57% 43% 51%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+#top-wrapper .bubble1 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 59% 41% 48% 52% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 700px;
+  left: 50px;
+}
+
+#top-wrapper .bubble2 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 39% 61% 31% 69% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 90px;
+  left: 1000px;
+}
+
+#top-wrapper .bubble3 {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 24% 76% 34% 66% / 42% 51% 49% 58%; 
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 450px;
+  left: 700px;
+}
+
+#top-wrapper .bubble4 {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 45% 55% 34% 66% / 42% 51% 49% 58%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 200px;
+  left: 1220px;
+}
+
+
+#top-wrapper .today {
+  background: #FFF462;
+  width: 400px;
+  height: 180px;
+  /* border: 1px solid #333; */
+  position: absolute;
+  top: 600px;
+  left: 850px;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  box-shadow: 50px 50px 0 #ebebb1;
+  background: -webkit-linear-gradient(-45deg, #FFF462 40%, #ebebb1 100%); 
+}
+
+
+#top-wrapper .today h4 {
+  margin-bottom: 20px;
+}
+
+#top-wrapper .today p:nth-child(3) {
+  font-size: 15px;
+}
+
+/* ----------------------------------
+営業カレンダー・料金表リンク部分
+---------------------------------- */
+#link-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#link-wrapper a {
+  display: inline-block;
+  width: 35%;
+  text-align: center;
+  color: #3C5EBB;
+  transition: all 1s;
+}
+
+#link-wrapper a:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+#link-wrapper #calendar {
+  padding: 30px;
+  border-top: 3px solid #3C5EBB;
+  border-bottom: 3px solid #3C5EBB;
+}
+
+#link-wrapper #price {
+  padding: 30px;
+  border-top: 3px solid #3C5EBB;
+  border-bottom: 3px solid #3C5EBB;
+}
+
+/* --------------------------------------------
+ニュース部分
+-------------------------------------------- */
+#news-wrapper {
+  text-align: center;
+  width: 100%;
+  background: #BBE2F1;
+}
+
+#news-wrapper h2 {
+  margin-bottom: 30px;
+}
+
+#news-wrapper .diary {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#news-wrapper .diary .contents {
+  background: white;
+  width: 30%; 
+  padding: 10px;
+  border-radius: 5%;
+  color: #3C5EBB;
+}
+
+#news-wrapper .diary .contents:hover {
+  opacity: 0.8;
+}
+
+#news-wrapper .diary .contents img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5%;
+}
+
+#news-wrapper .diary .contents p {
+  text-align: left;
+}
+
+#news-wrapper #read-more {
+  display: inline-block;
+  background: #FFF462;
+  padding: 30px 70px; 
+  border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  margin: 60px 0 auto;
+  font-weight: 1000;
+  transition: all 1s;
+}
+
+#news-wrapper #read-more:hover {
+  opacity: 0.8;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+
+
+
+/* 
+------------------------------------------
+体験・プログラム部分
+------------------------------------------ */
+#program-wrapper #slide {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+#program-wrapper #message {
+  width: 50%;
+  position: absolute;
+  top: 1900px;
+  left: 0;
+  transition: rotate(-10deg);
+}
+
+#program-wrapper #introduce {
+  position: relative;
+}
+
+#program-wrapper #introduce p {
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 50px;
+  background: white;
+  
+}
+
+#program-wrapper #introduce a {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  background: #FFF462;
+  padding: 40px 60px; 
+  border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  font-weight: 1000;
+  transition: all 1s;
+}
+
+#program-wrapper #introduce a:hover {
+  opacity: 0.7;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+
+
+/* ---------------------------------------
+館内サービス部分
+--------------------------------------- */
+#service-wrapper {
+  background: #F8F4E6;
+  text-align: center;
+}
+
+#service-wrapper .flex-service {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+#service-wrapper .flex-service .service {
+  width: 30%;
+  margin: 0 10px;
+}
+
+#service-wrapper .flex-service .service .material-icons-outlined {
+  font-size: 80px;
+  margin: 30px 0;
+}
+
+#service-wrapper .flex-service .service p {
+  font-size: 20px;
+}
+
+#service-wrapper #floor-map {
+  display: inline-block;
+  margin: 60px 0 0 600px; 
+  background: #FFF462;
+  padding: 30px 60px; 
+  border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  font-weight: 1000;
+  transition: all 1s;
+}
+
+#service-wrapper #floor-map:hover {
+  opacity: 0.8;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+
+
+/* -----------------------------------------
+フッター部分
+----------------------------------------- */
+#footer {
+  background: #82cddd;
+  color: white;
+  position: relative;
+}
+
+
+#footer  .sns-icon ul {
+  text-align: center;
+  
+}
+
+#footer  .sns-icon ul li {
+  display: inline-block;
+  margin: 0 60px;
+}
+
+#footer .sns-icon i {
+  font-size: 50px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#footer .sns-icon i:hover {
+  color: #3C5EBB;
+  opacity: 0.8;
+  transform: scale(1.5, 1.5);
+  transition: all 1s;
+
+}
+
+
+#footer .footer-menu {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#footer .footer-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#footer .footer-menu ul li a {
+  color: white;
+  transition: all 1s;
+}
+
+#footer .footer-menu ul li a:hover {
+  color: #3C5EBB;
+  opacity: 0.8;
+  font-size: 20px;
+  transition: all 1s;
+}
+
+#footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#footer .footer-deco1 {
+  width: 150px;
+  height: 80px;
+  border-top-right-radius: 80%;
+  background: #82cddd;
+  position: absolute;
+  top: -200px;
+  left: 0; 
+}
+
+#footer .footer-deco2 {
+  width: 350px;
+  height: 80px;
+  border-top-right-radius: 80%;
+  background: #82cddd;
+  position: absolute;
+  top: -140px;
+  left: 0; 
+}
+
+#footer .footer-deco3 {
+  width: 500px;
+  height: 80px;
+  border-top-right-radius: 80%;
+  background: #82cddd;
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+#footer .fish-logo {
+  width: 180px;
+  height: 180px;
+  background: url(../img/footer_logo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 59% 41% 48% 52% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+#footer .bubble5 {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 59% 41% 48% 52% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: -100px;
+  left: 70px;
+}
+
+#footer .bubble6 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 39% 61% 31% 69% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 150px;
+  left: 180px;
+}
+
+#footer .bubble7 {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 59% 41% 48% 52% / 64% 37% 63% 36%;
+  box-shadow: 2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 180px;
+  left: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
