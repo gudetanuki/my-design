@@ -1,0 +1,134 @@
+/* --------------------------
+営業日・休館日部分
+-------------------------- */
+#schedule {
+  margin-top: 200px;
+  text-align: center;
+  height: 500px;
+  background: pink;
+  padding-bottom: 30px;
+}
+
+#schedule #info {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 30px auto 0;
+}
+
+#schedule #info th {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+#schedule #info td {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+#schedule ul {
+  list-style: disc;
+  background: yellow;
+  margin-left: 250px;
+  padding: 0;
+  text-align: left;
+  width: 50%;
+}
+
+#schedule ul li a {
+  text-decoration: underline;
+  color: #9F39BE;
+  display: inline-block;
+}
+
+#schedule ul li a:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+
+/* ------------------------------
+料金表
+------------------------------ */
+#price {
+  text-align: center;
+  margin-top: 0;
+  background: silver;
+}
+
+#price #prices {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 30px auto 0;
+}
+
+#price #prices th {
+  padding: 10px 0;
+  font-size: 20px;
+  width: 20%;
+}
+
+#price #prices th span {
+  font-size: 10px;
+}
+
+
+#price #prices td {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+#price ul {
+  list-style: disc;
+  background: yellow;
+  margin-left: 250px;
+  padding: 0;
+  text-align: left;
+  width: 50%;
+}
+
+/* -----------------------------
+団体料金
+----------------------------- */
+#price .group {
+  width: 60%;
+  background: skyblue;
+  text-align: left;
+  margin: 40px auto 60px;
+}
+
+#price .group h3 {
+  border-bottom: 1px solid #333;
+}
+
+#price .group #group-prices {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+#price .group #group-prices th {
+  padding: 10px 0;
+  font-size: 20px;
+  width: 20%;
+}
+
+#price .group #group-prices th span {
+  font-size: 10px;
+}
+
+
+#price .group #group-prices td {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+#price .group ul {
+  list-style: disc;
+  background: yellow;
+  margin-left: 35px;
+  padding: 0;
+  text-align: left;
+  width: 50%;
+}
