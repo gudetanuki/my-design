@@ -4,31 +4,34 @@
 #schedule {
   margin-top: 200px;
   text-align: center;
-  height: 500px;
   background: pink;
-  padding-bottom: 30px;
 }
 
 #schedule #info {
   width: 60%;
   border-collapse: collapse;
+  border-color: #3C5EBB;
   margin: 30px auto 0;
 }
 
 #schedule #info th {
   padding: 10px 0;
   font-size: 20px;
+  background:#3C5EBB;
+  color: #fff;
+  width: 50%;
 }
 
 #schedule #info td {
   padding: 20px 0;
   font-size: 18px;
+  width: 50%;
 }
 
 #schedule ul {
   list-style: disc;
   background: yellow;
-  margin-left: 250px;
+  margin: 10px 0 0 250px;
   padding: 0;
   text-align: left;
   width: 50%;
@@ -59,6 +62,7 @@
 #price #prices {
   width: 60%;
   border-collapse: collapse;
+  border-color: #3C5EBB;
   margin: 30px auto 0;
 }
 
@@ -66,6 +70,8 @@
   padding: 10px 0;
   font-size: 20px;
   width: 20%;
+  background:#3C5EBB;
+  color: #fff;
 }
 
 #price #prices th span {
@@ -81,7 +87,7 @@
 #price ul {
   list-style: disc;
   background: yellow;
-  margin-left: 250px;
+  margin: 10px 0 0 250px;
   padding: 0;
   text-align: left;
   width: 50%;
@@ -92,18 +98,24 @@
 ----------------------------- */
 #price .group {
   width: 60%;
-  background: skyblue;
   text-align: left;
-  margin: 40px auto 60px;
+  margin: 40px auto 100px;
 }
 
 #price .group h3 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #572424;
+  padding-bottom: 5px;
+  color: #572424;
+}
+
+#price .group p {
+  margin: 10px 0;
 }
 
 #price .group #group-prices {
   width: 100%;
   border-collapse: collapse;
+  border-color: #3C5EBB;
   margin: 30px auto 0;
   text-align: center;
 }
@@ -112,6 +124,8 @@
   padding: 10px 0;
   font-size: 20px;
   width: 20%;
+  background:#3C5EBB;
+  color: #fff;
 }
 
 #price .group #group-prices th span {
@@ -127,7 +141,7 @@
 #price .group ul {
   list-style: disc;
   background: yellow;
-  margin-left: 35px;
+  margin: 10px 0 0 35px;
   padding: 0;
   text-align: left;
   width: 50%;

@@ -1,0 +1,96 @@
+#acsess-map {
+  margin-top: 200px;
+  text-align: center;
+  background: pink;
+}
+
+/* ----------------------------
+アクセスの表部分
+---------------------------- */
+#acsess-map .acsess {
+  width: 60%;
+  border-collapse: collapse;
+  border-color: #3C5EBB;
+  margin: 30px auto 0;
+
+}
+
+#acsess-map .acsess th {
+  padding: 10px 0;
+  font-size: 20px;
+  background:#3C5EBB;
+  color: #fff;
+  width: 50%;
+}
+
+#acsess-map .acsess td {
+  padding: 20px 0;
+  font-size: 18px;
+  width: 50%;
+}
+
+
+
+/* -----------------------------
+駐車場について
+------------------------------ */
+#acsess-map .parking {
+  background: yellow;
+  margin: 30px auto; 
+  width: 60%;
+}
+
+#acsess-map .parking h3 {
+  border-bottom: 1px solid #572424;
+  padding-bottom: 5px;
+  color: #572424;
+  text-align: left;
+}
+
+#acsess-map .parking h4 {
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+#acsess-map .parking .parking-price {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: #3C5EBB;
+  margin: 0 auto;
+}
+
+#acsess-map .parking .parking-price th {
+  padding: 10px 0;
+  font-size: 20px;
+  background:#3C5EBB;
+  color: #fff;
+  width: 50%;
+}
+
+#acsess-map .parking .parking-price td {
+  padding: 20px 0;
+  font-size: 18px;
+  width: 50%;
+}
+
+#acsess-map .parking ul {
+  list-style: disc;
+  background: yellow;
+  margin: 10px 0 0 50px;
+  padding: 0;
+  text-align: left;
+  width: 50%;
+}
+
+
+/* -------------------------------
+地図
+------------------------------- */
+#acsess-map .map {
+  background: silver;
+  padding: 30px 0 100px;
+}
+
+
+
