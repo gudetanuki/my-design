@@ -4,7 +4,6 @@
 #schedule {
   margin-top: 200px;
   text-align: center;
-  background: pink;
 }
 
 #schedule #info {
@@ -30,7 +29,6 @@
 
 #schedule ul {
   list-style: disc;
-  background: yellow;
   margin: 10px 0 0 250px;
   padding: 0;
   text-align: left;
@@ -56,7 +54,6 @@
 #price {
   text-align: center;
   margin-top: 0;
-  background: silver;
 }
 
 #price #prices {
@@ -67,11 +64,12 @@
 }
 
 #price #prices th {
-  padding: 10px 0;
+  padding: 15px 0 10px 0;
   font-size: 20px;
+  line-height: 15px;
   width: 20%;
   background:#3C5EBB;
-  color: #fff;
+  color: #fff;  
 }
 
 #price #prices th span {
@@ -86,7 +84,6 @@
 
 #price ul {
   list-style: disc;
-  background: yellow;
   margin: 10px 0 0 250px;
   padding: 0;
   text-align: left;
@@ -103,9 +100,9 @@
 }
 
 #price .group h3 {
-  border-bottom: 1px solid #572424;
+  border-bottom: 1px solid #ba983c;
   padding-bottom: 5px;
-  color: #572424;
+  color: #ba983c;
 }
 
 #price .group p {
@@ -121,8 +118,9 @@
 }
 
 #price .group #group-prices th {
-  padding: 10px 0;
+  padding: 15px 0 10px 0;
   font-size: 20px;
+  line-height: 15px;
   width: 20%;
   background:#3C5EBB;
   color: #fff;
@@ -140,9 +138,113 @@
 
 #price .group ul {
   list-style: disc;
-  background: yellow;
   margin: 10px 0 0 35px;
   padding: 0;
   text-align: left;
   width: 50%;
 }
+
+
+
+
+/* ----------------------------------
+レスポンシブ
+---------------------------------- */
+@media (max-width: 600px) {
+
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  /* -------------------------
+  営業時間・休館日
+  ------------------------- */
+  #schedule {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #schedule #info {
+    width: 100%;
+  }
+
+  #schedule #info th {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #schedule #info td {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  #schedule ul {
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* -------------------------
+  料金
+  ------------------------- */
+  #price #prices {
+  width: 100%;
+  }
+
+  #price #prices th {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #price #prices th span {
+    font-size: 9px;
+  }
+
+  #price #prices td {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  #price ul {
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* ------------------------------
+  団体料金
+  ------------------------------ */
+  #price .group {
+    width: 100%;
+    text-align: left;
+    margin: 40px auto 150px;
+  }
+
+  #price .group #group-prices th {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #price .group #group-prices th span {
+    font-size: 9px;
+  }
+
+  #price .group #group-prices td {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  #price .group #group-prices ul {
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+

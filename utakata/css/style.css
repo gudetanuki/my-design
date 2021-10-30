@@ -42,7 +42,7 @@ img {
 ------------------------------------ */
 #header {
   width: 100%;
-  height: 210px;  
+  height: auto;  
 }
 
 #header .header-wrapper {
@@ -141,6 +141,7 @@ img {
 ---------------------------------------- */
 #top-wrapper {
   background: linear-gradient(#ade8e9, #0058fc);
+  width: 100%;
   height: 850px;
   margin-top: -40px;
   padding-top: 60px;
@@ -238,7 +239,6 @@ img {
   background: #FFF462;
   width: 400px;
   height: 180px;
-  /* border: 1px solid #333; */
   position: absolute;
   top: 600px;
   left: 850px;
@@ -258,6 +258,27 @@ img {
 #top-wrapper .today p:nth-child(3) {
   font-size: 15px;
 }
+
+/* --------------------------------------
+モバイル版「本日の営業時間」
+-------------------------------------- */
+#today-sp {
+  background: #FFF462;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+#today-sp h4 {
+  margin-bottom: 20px;
+}
+
+#today-sp p:nth-child(3) {
+  font-size: 15px;
+}
+
+
 
 /* ----------------------------------
 営業カレンダー・料金表リンク部分
@@ -319,16 +340,21 @@ img {
   padding: 10px;
   border-radius: 5%;
   color: #3C5EBB;
+  transition: all 1s;
+  display: block;   /* 追加 */
 }
 
 #news-wrapper .diary .contents:hover {
   opacity: 0.8;
+  transform: scale(1.1, 1.1);
+  transition: all 1s;
 }
 
 #news-wrapper .diary .contents img {
   width: 100%;
   height: 50vh;
   border-radius: 5%;
+  object-fit: cover;  /* 追加 */
 }
 
 #news-wrapper .diary .contents p {
@@ -338,7 +364,7 @@ img {
 #news-wrapper #read-more {
   display: inline-block;
   background: #FFF462;
-  padding: 30px 70px; 
+  padding: 30px 80px; 
   border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
   margin: 60px 0 auto;
   font-weight: 1000;
@@ -366,9 +392,8 @@ img {
 #program-wrapper #message {
   width: 50%;
   position: absolute;
-  top: 1900px;
+  top: 2000px;
   left: 0;
-  transition: rotate(-10deg);
 }
 
 #program-wrapper #introduce {
@@ -378,9 +403,7 @@ img {
 #program-wrapper #introduce p {
   display: inline-block;
   line-height: 40px;
-  margin-left: 50px;
-  background: white;
-  
+  background: white;  
 }
 
 #program-wrapper #introduce a {
@@ -394,6 +417,7 @@ img {
   font-weight: 1000;
   transition: all 1s;
 }
+
 
 #program-wrapper #introduce a:hover {
   opacity: 0.7;
@@ -413,7 +437,6 @@ img {
 #service-wrapper .flex-service {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 #service-wrapper .flex-service .service {
@@ -434,7 +457,7 @@ img {
   display: inline-block;
   margin: 60px 0 0 600px; 
   background: #FFF462;
-  padding: 30px 60px; 
+  padding: 35px 90px; 
   border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
   font-weight: 1000;
   transition: all 1s;
@@ -459,7 +482,6 @@ img {
 
 #footer  .sns-icon ul {
   text-align: center;
-  
 }
 
 #footer  .sns-icon ul li {
@@ -478,7 +500,6 @@ img {
   opacity: 0.8;
   transform: scale(1.5, 1.5);
   transition: all 1s;
-
 }
 
 
@@ -509,11 +530,12 @@ img {
 #footer p {
   font-size: 12px;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 #footer .footer-deco1 {
-  width: 150px;
-  height: 80px;
+  width: 10%;
+  height: 10vh;
   border-top-right-radius: 80%;
   background: #82cddd;
   position: absolute;
@@ -522,8 +544,8 @@ img {
 }
 
 #footer .footer-deco2 {
-  width: 350px;
-  height: 80px;
+  width: 20%;
+  height: 10vh;
   border-top-right-radius: 80%;
   background: #82cddd;
   position: absolute;
@@ -532,8 +554,8 @@ img {
 }
 
 #footer .footer-deco3 {
-  width: 500px;
-  height: 80px;
+  width: 35%;
+  height: 11vh;
   border-top-right-radius: 80%;
   background: #82cddd;
   position: absolute;
@@ -588,6 +610,206 @@ img {
 }
 
 
+/* --------------------------------
+レスポンシブ
+-------------------------------- */
+@media (max-width: 600px) {
+
+  /* ---------------------------------
+  ヘッダー
+  --------------------------------- */
+  #header {
+    width: 100%;
+    height: 20vh;
+  }
+  
+  #header .header-wrapper {
+    display: none;
+  }
+
+  #header #svg-bg {
+    height: 70%;
+  }
+
+  /* --------------------------------
+  トップ画像部分
+  -------------------------------- */
+  #top-wrapper {
+    height: 70vh;
+    background-image: url(../img/top_wrap_1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  #top-wrapper .dolphin,.fish1,.fish2,.bubble1,.bubble2,.bubble3,.bubble4 {
+    display: none;
+  }
+
+  #top-wrapper .today {
+    display: none;
+  }
+
+  /* ------------------------------------
+  モバイル版「本日の営業時間」を表示させる
+  ------------------------------------ */
+  #today-sp {
+    display: block;
+  }
+
+  /* ------------------------------
+  営業時間・料金表リンク
+  ------------------------------ */
+  #link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #link-wrapper a {
+    width:  90%;
+  }
+
+  #link-wrapper a:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  #link-wrapper #calendar, #link-wrapper #price {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+
+
+  /* --------------------------------------------
+  ニュース部分
+  -------------------------------------------- */
+  #news-wrapper .diary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #news-wrapper .diary .contents {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* 追加 */
+  #news-wrapper .diary {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #news-wrapper .diary .contents img {
+    height: 80px;
+  }
+  
+  #news-wrapper .diary .contents p {
+    font-size: 14px;
+  }
+  #news-wrapper #read-more {
+    margin: 0 auto;
+  }
+
+  /* ------------------------------------
+  プログラム部分
+  ------------------------------------ */
+  #program-wrapper #slide {
+    width: 100%;
+    height: 50vh;
+    /* margin-bottom: 50px; */
+    object-fit: cover;
+    position: relative;
+  }
+
+  #program-wrapper #introduce {
+    text-align: center;
+  }
+
+  #program-wrapper #introduce p {
+    display: none;
+  }
+
+  #program-wrapper #message {
+   display: none;
+  }
+
+  #program-wrapper #introduce a {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+  }
+
+  /* ----------------------------------
+  館内サービス
+  ---------------------------------- */
+  #service-wrapper {
+    margin-top: 60px;
+  }
+
+  #service-wrapper .flex-service .service {
+    margin: 0 15px;
+    width: 30%;
+  }
+
+  #service-wrapper .flex-service .service .material-icons-outlined {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+
+
+  #service-wrapper .flex-service .service p {
+    font-size: 12px;
+  }
+  
+  #service-wrapper #floor-map {
+    margin: 30px auto 60px; 
+  }
+
+
+  /* --------------------------------------
+  フッター部分
+  -------------------------------------- */
+  #footer  .sns-icon ul {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #footer  .sns-icon ul li {
+    width: 20%;
+    margin: 0 5px 0 5px;
+  }
+
+  #footer .sns-icon i {
+    font-size: 40px;
+  }
+
+  #footer .footer-menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  #footer .footer-menu ul {
+    width: 100%;
+    font-size: 10px;
+    margin: 20px 0;
+  }
+
+  #footer .footer-menu ul li {
+    margin: 0 5px;
+  }
+
+
+  
+
+  #footer .fish-logo, .bubble5, .bubble6, .bubble7 {
+    display: none;
+  }
+}
 
 
 

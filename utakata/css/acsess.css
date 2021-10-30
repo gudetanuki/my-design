@@ -1,7 +1,6 @@
 #acsess-map {
   margin-top: 200px;
   text-align: center;
-  background: pink;
 }
 
 /* ----------------------------
@@ -35,15 +34,14 @@
 駐車場について
 ------------------------------ */
 #acsess-map .parking {
-  background: yellow;
-  margin: 30px auto; 
+  margin: 50px auto 30px; 
   width: 60%;
 }
 
 #acsess-map .parking h3 {
-  border-bottom: 1px solid #572424;
+  border-bottom: 1px solid #ba983c;
   padding-bottom: 5px;
-  color: #572424;
+  color: #ba983c;
   text-align: left;
 }
 
@@ -76,7 +74,6 @@
 
 #acsess-map .parking ul {
   list-style: disc;
-  background: yellow;
   margin: 10px 0 0 50px;
   padding: 0;
   text-align: left;
@@ -88,9 +85,74 @@
 地図
 ------------------------------- */
 #acsess-map .map {
-  background: silver;
   padding: 30px 0 100px;
 }
 
+
+/* ----------------------------------
+レスポンシブ
+---------------------------------- */
+@media (max-width: 600px) {
+
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  #acsess-map {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  /* ----------------------------
+  アクセス表部分
+  ---------------------------- */
+  #acsess-map .acsess {
+    width: 100%;
+  }
+
+  #acsess-map .acsess th {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #acsess-map .acsess td {
+    font-size: 14px;
+    padding: 10px 5px;
+    text-align: left;
+  }
+
+  /* --------------------------------
+  駐車場について
+  -------------------------------- */
+  #acsess-map .parking {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #acsess-map .parking .parking-price th {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  #acsess-map .parking .parking-price td {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  #acsess-map .parking ul {
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #acsess-map .map {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+
+
+}
 
 
