@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
-
 </head>
 <body>
   <header id="header">
     <div class="header-wrapper">
-      <div class="logo-img"></div>
-      <nav>
+        <img class="logo-img" src="img/logo.png" alt="">
+      <nav class="header-menu">
         <ul>
           <li><a href="price.html#schedule">営業時間・料金</a></li>
           <li><a href="acsess.html#acsess-map">アクセス</a></li>
@@ -20,11 +20,26 @@
           <li><a href="#">フロア案内</a></li>
         </ul>
       </nav>
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </div>
+    
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
       <path d="M0,0 v50 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 v-50 Z" fill="#82cddd"></path>
     </svg>
   </header>
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="price.html#schedule">営業時間・料金</a></li>
+        <li><a href="acsess.html#acsess-map">アクセス</a></li>
+        <li><a href="program.html#program">体験プログラム</a></li>
+        <li><a href="#">フロア案内</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main>
     <div id="top-wrapper">
@@ -40,11 +55,6 @@
         <p>XX:XX～XX:XX</p>
         <p>※最終入館受付は○○:○○まで</p> 
       </div>
-      <!-- <div class="today-sp">
-        <h4>本日の営業時間</h4>
-        <p>XX:XX～XX:XX</p>
-        <p>※最終入館受付は○○:○○まで</p>   
-      </div> -->
     </div>
     <div id="today-sp">
       <h4>本日の営業時間</h4>

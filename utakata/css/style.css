@@ -55,53 +55,16 @@ img {
 #header .header-wrapper .logo-img {
   width: 150px;
   height: 150px;
-  background: url(../img/logo.png);
-  background-position: center;
-  background-size: cover;
   border-radius: 50%;
-  margin-left: 130px;
-  margin-top: 35px;
+  margin-left: 65px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
-.logo-img::before, .logo-img::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 130px;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border: 1px solid #1da1f2;
-  border-radius: 50%;
-  box-sizing: border-box;
-  pointer-events: none;
-}
-
-.logo-ing:hover {
-  box-shadow: 0 0 20px #1da1f2;
-}
-
-.logo-img:hover::before, 
-.logo-img:hover::after {
-  animation: pulsate 2s linear infinite;
-}
-
-.logo-img:hover::after {
-  animation-delay: 1s;
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+#header .header-wrapper .logo-img:hover {
+  opacity: 0.7;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
 }
 
 #header .header-wrapper ul {
@@ -126,6 +89,25 @@ img {
   transition: all 1s;
 }
 
+/* ------------------------------------------
+モバイル版のみでのヘッダーメニュー（ハンバーガー）
+------------------------------------------ */
+.sp-menu {
+  display: none;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  /* margin-left: 400px; */
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
 
 #header #svg-bg {
   position: absolute;
@@ -133,6 +115,71 @@ img {
   height: 100%;
   top: -100px;
   left: 0;
+}
+
+/* --------------------------------------------
+モバイル版のみで表示されるヘッダーメニュー
+-------------------------------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+  z-index: 1;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px); 
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.overlay.show li:nth-child(4) {
+  transition-delay: 0.4s;
 }
 
 
@@ -234,7 +281,6 @@ img {
   left: 1220px;
 }
 
-
 #top-wrapper .today {
   background: #FFF462;
   width: 400px;
@@ -249,7 +295,6 @@ img {
   box-shadow: 50px 50px 0 #ebebb1;
   background: -webkit-linear-gradient(-45deg, #FFF462 40%, #ebebb1 100%); 
 }
-
 
 #top-wrapper .today h4 {
   margin-bottom: 20px;
@@ -511,7 +556,7 @@ img {
 #footer .footer-menu ul {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin: 50px 0 20px;
   align-items: center;
 }
 
@@ -623,12 +668,35 @@ img {
     height: 20vh;
   }
   
-  #header .header-wrapper {
+  #header .header-wrapper ul {
     display: none;
   }
 
+  #header .header-wrapper .logo-img {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+
   #header #svg-bg {
-    height: 70%;
+    top: -220px
+  }
+
+
+  /* -------------------------------------
+  ヘッダーハンバーガーメニュー
+  ------------------------------------- */
+  .pc-menu {
+    display: none;
+  }
+
+  .sp-menu {
+    display: block;
   }
 
   /* --------------------------------
@@ -721,7 +789,6 @@ img {
   #program-wrapper #slide {
     width: 100%;
     height: 50vh;
-    /* margin-bottom: 50px; */
     object-fit: cover;
     position: relative;
   }
@@ -802,9 +869,6 @@ img {
   #footer .footer-menu ul li {
     margin: 0 5px;
   }
-
-
-  
 
   #footer .fish-logo, .bubble5, .bubble6, .bubble7 {
     display: none;
