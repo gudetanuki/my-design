@@ -1,0 +1,29 @@
+.contain {
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px;
+  background: pink;
+}
+
+/* ----------------------------------
+テキスト部分
+---------------------------------- */
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 30px;
+}
+
+#about .text {
+  background: silver;
+  font-size: 18px;
+  line-height: 4;
+  letter-spacing: 0.2em;
+}
+
+
+/* ----------------------------------------
+ディレクター紹介部分
+---------------------------------------- */
