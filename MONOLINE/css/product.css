@@ -1,0 +1,15 @@
+.contain {
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px;
+  background: pink;
+}
+
+#product-page {
+  text-align: center;
+}
+
+
+#product-page h2 {
+  font-size: 30px;
+}

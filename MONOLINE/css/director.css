@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   background: pink;
+
 }
 
 /* ----------------------------------
@@ -50,7 +51,7 @@
 #director-profile .title-name {
   background: white;
   width: 40%;
-  margin-top: 15px;
+  margin: 15px auto 0;
 }
 
 #director-profile .title-name p:nth-child(1) {
@@ -68,6 +69,8 @@
 #director-profile .profile-text {
   background: silver;
   width: 40%;
-  margin-top: 40px;
+  margin: 40px auto 0;
+  text-align: left;
+  font-size: 16px;
 }
 
