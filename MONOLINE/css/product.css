@@ -13,3 +13,58 @@
 #product-page h2 {
   font-size: 30px;
 }
+
+h3 {
+  font-size: 18px;
+  border-bottom: 1px solid #333;
+}
+
+
+/* -------------------------------
+商品の画像部分（フレックス）
+------------------------------- */
+.product-image {
+  background: silver;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.product-image .photo {
+  width: 50%;
+}
+
+.product-image .product-info {
+  width: 50%;
+  background: yellow;
+}
+
+.product-image .product-info h4 {
+  font-size: 20px;
+}
+
+.product-image .product-info #price {
+  font-size: 20px;
+}
+
+.product-image .product-info #price span {
+  font-size: 12px;
+}
+
+.product-image .product-info #copy {
+  font-size: 30px;
+}
+
+/* ---------------------------------------
+商品の特徴
+--------------------------------------- */
+.detail {
+  width: 100%;
+  background: skyblue;
+}
+
+.detail .flex {
+
+}
+
