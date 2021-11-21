@@ -15,8 +15,9 @@
 }
 
 h3 {
-  font-size: 18px;
-  border-bottom: 1px solid #333;
+  font-size: 20px;
+  border-bottom: 4px solid #333;
+  font-weight: normal;
 }
 
 
@@ -28,7 +29,7 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
+  margin: 40px 0;
 }
 
 .product-image .photo {
@@ -38,6 +39,8 @@ h3 {
 .product-image .product-info {
   width: 50%;
   background: yellow;
+  text-align: left;
+  padding: 30px 20px;
 }
 
 .product-image .product-info h4 {
@@ -53,7 +56,9 @@ h3 {
 }
 
 .product-image .product-info #copy {
-  font-size: 30px;
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  margin-top: 40px;
 }
 
 /* ---------------------------------------
@@ -62,9 +67,122 @@ h3 {
 .detail {
   width: 100%;
   background: skyblue;
+  margin: 40px 0;
 }
 
 .detail .flex {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.detail .flex .herb-image {
+  width: 50%;
+  background: silver;  
+  padding: 20px;
+}
+
+.detail .flex .herb-image .image {
+  width: 90%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.detail .flex .herb-image .image #coconut {
+  width: 40%;
+  height: 18vh;
+  background: url(../img/coconut-oil.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.detail .flex .herb-image .image #flower {
+  width: 40%;
+  height: 18vh;
+  background: url(../img/flower-essence.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.detail .flex .herb-image .annotation {
+  text-align: left;
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.detail .flex .detail-text {
+  width: 50%;
+  text-align: left;
+  background: yellow;
+  padding: 25px;
+}
+
+.detail .flex .detail-text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------------------------
+カラー展開
+---------------------------------------------- */
+.all-colors {
+  width: 100%;
+  margin: 40px 0;
+
+}
+
+.all-colors .color-chert {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.all-colors .color-chert .color {
+  width: 30%;
+  background: silver;
+  text-align: center;
+}
+
+.all-colors .color-chert .color img {
+  width: 70%;
+}
+
+.all-colors .color-chert .color h4 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.all-colors .color-chert .color p {
+  width: 70%;
+  background: blue;
+  margin: 0 auto;
+  text-align: left;
+  /* font-size: 13px; */
+}
+
+
+
+/* ------------------------------------
+全成分
+------------------------------------ */
+.all-component {
+  width: 100%;
+  background: green;
+  margin: 40px 0;
+}
+
+.all-component p {
+  background: white;
+  text-align: left;
+  width: 85%;
+  margin: 20px auto 0;
+  font-size: 13px;
 
 }
 
