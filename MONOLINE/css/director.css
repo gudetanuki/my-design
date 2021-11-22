@@ -31,15 +31,8 @@
 #director-profile {
   background: yellow;
   text-align: center;
-}
-
-#director-profile .face-photo {
-  /* width: 30%;
-  height: 40vh;
-  border: 1px solid #333;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 #director-profile .face-photo img {
@@ -57,11 +50,13 @@
 #director-profile .title-name p:nth-child(1) {
   width: 100%;
   font-size: 16px;
+  letter-spacing: 0.2rem;
 }
 
 #director-profile .title-name p:nth-child(2) {
   width: 100%;
   font-size: 30px;
+  letter-spacing: 0.2rem;
 }
 
 
