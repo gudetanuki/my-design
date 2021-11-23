@@ -2,8 +2,6 @@
   width: 65%;
   margin: 0 auto;
   padding: 20px;
-  background: pink;
-
 }
 
 /* ----------------------------------
@@ -11,14 +9,16 @@
 ---------------------------------- */
 #about {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 #about h2 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 #about .text {
-  background: silver;
   font-size: 18px;
   line-height: 4;
   letter-spacing: 0.2em;
@@ -29,7 +29,6 @@
 ディレクター紹介部分
 ---------------------------------------- */
 #director-profile {
-  background: yellow;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -42,7 +41,6 @@
 }
 
 #director-profile .title-name {
-  background: white;
   width: 40%;
   margin: 15px auto 0;
 }
@@ -62,10 +60,9 @@
 
 
 #director-profile .profile-text {
-  background: silver;
   width: 40%;
   margin: 40px auto 0;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
 }
 

@@ -1,0 +1,122 @@
+
+/* ----------------------------
+トップ画像
+---------------------------- */
+.main-visual {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.main-visual #img-1 {
+  width: 40%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 10px;
+  transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+}
+
+.main-visual #img-2 {
+  width: 35%;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 10px;
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+
+
+/* ------------------------------
+メッセージ
+------------------------------- */
+#message {
+  background-image: url(../img/ella-jardim-wOGhHamMqLc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+#message p {
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+/* ------------------------------
+お知らせ
+------------------------------ */
+#news {
+  margin-top: 50px;
+}
+
+#news dl {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#news dt {
+  width: 20%;
+  border-bottom: 2px dashed #333;
+  padding: 20px 0;
+}
+
+#news dd {
+  width: 80%;
+  border-bottom: 2px dashed #333;
+  padding: 20px 0;
+}
+
+#news .more {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 23px;
+}
+
+#news .more a {
+  text-decoration: underline;
+}
+
+
+#news .more span {
+  margin-left: 0;
+}
+
+
+/* -----------------------------
+レスポンシブ
+----------------------------- */
+@media (max-width: 725px) {
+
+  /* ------------------------------
+  お知らせリストを縦並びに
+  ------------------------------ */
+  #news {
+    text-align: center;
+  }
+
+  #news dl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #news dt {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #news .more {
+    text-align: center;
+  }
+
+
+}
