@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-size: 20px;
+  font-family: 'Yomogi', cursive;
+  font-weight: bold;
+}
+
+body {
+  color: black;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+main {
+  padding: 10% 0 10% 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* ---------------------------
+ヘッダー
+--------------------------- */
+header {
+  width: 100%;
+  height: 20%;
+  z-index: 11;
+  background-image: url(../img/divazus-fabric-store-2f69TazFt_4-unsplash.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+
+header .header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 2px dashed #333;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+  padding: 10px;
+}
+
+header .header-menu ul {
+  display: flex;
+}
+
+header .header-menu li {
+  padding-left: 80px;
+}
+
+header .header-menu a, span {
+  vertical-align: bottom;
+}
+
+header .sp-menu {
+  display: none;
+}
+
+header .hamburger {
+  display: none;
+}
+
+
+/* -------------------------------------
+トップに戻るボタン
+-------------------------------------- */
+
+header .page-top {
+  background: pink;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+header .page-top span {
+  font-size: 50px;
+  padding: 10px;
+}
+
+header .page-top:hover {
+  opacity: 0.7;
+}
+/* -------------------------------
+フッター
+------------------------------- */
+footer {
+  background-image: url(../img/divazus-fabric-store-2f69TazFt_4-unsplash.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+
+footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  border: 2px dashed #333;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+  padding: 10px;
+  
+}
+
+footer .footer-left h3 {
+  margin-bottom: 10px;
+}
+
+footer .footer-left dl {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  border-top: 2px solid #333;
+}
+
+footer .footer-left dt {
+  width: 20%;
+}
+
+footer .footer-left dd {
+  width: 80%;
+}
+
+footer .icon-menu {
+  margin-right: 20px;
+  display: flex;
+}
+
+footer .icon-menu span {
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+
+/* -----------------------------
+レスポンシブ
+----------------------------- */
+@media (max-width: 725px) {
+  
+
+  /* ------------------------------
+  通常のヘッダーメニューを非表示に
+  ------------------------------ */
+  header .menu {
+    display: none;
+  }
+
+  /* ---------------------------------
+  ハンバーガーアイコンを出す
+  --------------------------------- */
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  header .hamburger #open {
+    font-size: 40px;
+    vertical-align: baseline;
+  }
+
+
+  /* ----------------------------------------------
+  ハンバーガーを押した時に表示されるsp-menuのcss設定
+  ----------------------------------------------- */
+  
+  .sp-menu {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 201, 210, .8);
+    transition: all .2s ease-in-out;
+  }
+  
+  .sp-menu ul {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .sp-menu li {
+    margin-bottom: 30px;
+  }
+
+  .sp-menu .material-icons-outlined {
+    font-size: 40px; 
+  }
+
+   .sp-menu #close {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    cursor: pointer;
+    font-size: 60px;
+   }
+}
