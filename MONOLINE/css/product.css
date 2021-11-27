@@ -2,7 +2,6 @@
   width: 65%;
   margin: 0 auto;
   padding: 20px;
-  background: pink;
 }
 
 #product-page {
@@ -47,6 +46,7 @@ img {
   margin: 0;
   padding: 0;
   height: 90%;
+  border: 1px solid #999;
   display: flex;
   transition: transform 0.3s;
 }
@@ -68,7 +68,6 @@ img {
 .product-image .photo #btnav {
   width: 100%;
   height: 10%;
-  background: orange;
   padding-top: 10px;
 }
 
@@ -125,7 +124,6 @@ img {
 --------------------------------- */
 .product-image .product-info {
   width: 50%;
-  background: yellow;
   text-align: left;
   padding: 30px 20px;
 }
@@ -153,7 +151,6 @@ img {
 --------------------------------------- */
 .detail {
   width: 100%;
-  background: skyblue;
   margin: 40px 0;
 }
 
@@ -168,7 +165,6 @@ img {
 -------------------------------- */
 .detail .flex .herb-image {
   width: 50%;
-  background: silver;  
   padding: 20px;
 }
 
@@ -208,7 +204,6 @@ img {
 .detail .flex .detail-text {
   width: 50%;
   text-align: left;
-  background: yellow;
   padding: 25px;
 }
 
@@ -236,7 +231,6 @@ img {
 
 .all-colors .color-chert .color {
   width: 30%;
-  background: silver;
   text-align: center;
 }
 
@@ -252,7 +246,6 @@ img {
 
 .all-colors .color-chert .color p {
   width: 70%;
-  background: blue;
   margin: 0 auto;
   text-align: left;
   font-size: 10px;
@@ -265,12 +258,10 @@ img {
 ------------------------------------ */
 .all-component {
   width: 100%;
-  background: green;
   margin: 40px 0;
 }
 
 .all-component p {
-  background: white;
   text-align: left;
   width: 85%;
   margin: 20px auto 0;
