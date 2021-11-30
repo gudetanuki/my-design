@@ -1,25 +1,28 @@
 'use strict';
 {
-  //スライドショー で表示させる画像パスを変数に格納
-const Images = [
-  "../img/top_slide_1.jpg",
-  "../img/top_slide_2.jpg",
-  "../img/mua.jpg",
-  ];
+  const message = document.getElementById('message');
 
-  const slideShow = document.getElementById('slideshow');
+  function callback(entries, obs) {
+    console.log(entries[0]);
 
-  let i = 0;
-
-  function slideImage() {
-    if (i === Images.length) {
-      i = 0;
-    };
-
-    slideShow.style.backgroundImage = 'url(' + Images[i] + ')';
-    i++;
+    // if (!entries[0].isIntersecting) {
+    //   return;
+    // }
+    if (entries[0].isIntersecting) {
+      entries[0].message.classList.add('up');
+    } else {
+      entries[0].message.classList.remove('up');
+    }
+    // entries[0].message.classList.add('up');
+    // obs.unobserve(entries[0].message);
   }
 
-  window.setInterval(slideImage, 3000);
+  const options = {
+    threshold: 0.5,
+    rootMargin: '0px 0px -100px',
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(message);
 
 }
