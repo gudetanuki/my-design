@@ -52,18 +52,26 @@
 }
 
 
-#director-profile .title-name {
+#director-profile #title-name {
   width: 40%;
   margin: 15px auto 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-#director-profile .title-name p:nth-child(1) {
+#director-profile #title-name.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#director-profile #title-name p:nth-child(1) {
   width: 100%;
   font-size: 16px;
   letter-spacing: 0.2rem;
 }
 
-#director-profile .title-name p:nth-child(2) {
+#director-profile #title-name p:nth-child(2) {
   width: 100%;
   font-size: 30px;
   letter-spacing: 0.2rem;
@@ -71,10 +79,17 @@
 
 
 
-#director-profile .profile-text {
+#director-profile #profile-text {
   width: 40%;
   margin: 40px auto 0;
   text-align: left;
   font-size: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
+#director-profile #profile-text.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
