@@ -152,15 +152,8 @@ img {
 #detail {
   width: 100%;
   margin: 40px 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
 }
 
-#detail.up {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 #detail .flex {
   width: 100%;
@@ -227,16 +220,7 @@ img {
 #all-colors {
   width: 100%;
   margin: 40px 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
 }
-
-#all-colors.up {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 
 #all-colors .color-chert {
@@ -275,15 +259,9 @@ img {
 ------------------------------------ */
 #all-component {
   width: 100%;
-  margin: 40px 0;  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+  margin: 40px 0; 
 }
 
-#all-component.up {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 #all-component p {
   text-align: left;

@@ -1,6 +1,5 @@
 'use strict';
 {
-  // const target = document.querySelector('img');
   const target = document.getElementById('face');
   const name = document.getElementById('title-name');
   const profile = document.getElementById('profile-text');
