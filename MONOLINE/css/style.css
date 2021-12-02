@@ -48,6 +48,7 @@ ul {
 }
 
 
+
 /* ---------------------------------
 トップスライド画像部分(パララックス)
 --------------------------------- */
@@ -59,7 +60,6 @@ main #slideshow {
   width: 100%;
   height: 80vh;
   background-repeat: no-repeat;
-  /* transition: background-image 2.5s ease infinite; */
   animation: image-slide 8s ease infinite; 
 }
 
@@ -88,6 +88,8 @@ main #slideshow {
   }
 }
 
+
+
 /* ---------------------------------------
 メッセージ部分
 --------------------------------------- */
@@ -99,16 +101,12 @@ main #message {
   padding: 70px;
 }
 
-
-
-
 main #message p {
   display: inline;
   font-size: 20px;
   line-height: 3;
   letter-spacing: 0.2em;
 } 
-
 
 
 
@@ -157,6 +155,7 @@ main #product .lip-image {
 }
 
 
+
 /* -----------------------------------------
 ディレクターページに飛ぶ部分（Director→）
 ----------------------------------------- */
@@ -175,7 +174,6 @@ main #product .lip-image {
   margin: 250px auto 0;
   text-align: center;
 }
-
 
 #director .director-image {
   width: 65%;
@@ -213,6 +211,113 @@ main #product .lip-image {
   padding-bottom: 10px;
 }
 
+
+/* -------------------------------------
+レスポンシブ
+------------------------------------- */
+@media (max-width: 599px) {
+
+  /* --------------------------
+  ヘッダー
+  -------------------------- */
+  #header {
+    width: 100%;
+    height: 8%;
+  }
+
+  /* -----------------------------
+  トップスライド部分
+  ----------------------------- */
+  main #slideshow {
+    width: 100%;
+    height: 40vh;
+    background-attachment: scroll;
+  }
+
+  /* -------------------------------
+  メッセージ部分
+  ------------------------------- */
+  main #message {
+    height: 40%;
+    padding: 30px;
+  }
+
+  main #message p {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+  } 
+
+  /* ------------------------------
+   商品ページに飛ぶ部分（Product→）
+   --------------------------------- */
+   main #product {
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  main #product .lip-image {
+    width: 100%;
+    height: 50vh;
+  }
+
+  #product a {
+    font-size: 30px;
+    width: 50%;
+    height: 10vh;
+    margin: 50px auto 30px;
+    text-align: center;
+  }
+
+  .arrow a::after {
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    content: '';
+    width: 20%;
+    height: 5px;
+    border-right: 4px solid #333;
+    border-bottom: 3px solid #333;
+    transform: skew(45deg);
+    transition: all 0.3s;
+  }
+
+  /* ------------------------------------
+  ディレクターページに飛ぶ部分（Director→）
+  ------------------------------------ */
+  #director {
+    width: 100%;
+    height: 60vh;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+  
+  #director a {
+    font-size: 30px;
+    width: 50%;
+    height: 10vh;
+    margin: 50px auto 30px;
+  }
+
+  #director .director-image {
+    width: 100%;
+    height: 50vh;
+  }
+  
+
+  /* ------------------------------
+  フッター
+  --------------------------------*/
+  #footer {
+    width: 100%;
+    height: 20%;
+    background: pink;
+  }
+
+ 
+
+
+}
 
 
 

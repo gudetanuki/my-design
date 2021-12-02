@@ -51,7 +51,6 @@
   transform: translateY(0);
 }
 
-
 #director-profile #title-name {
   width: 40%;
   margin: 15px auto 0;
@@ -92,4 +91,71 @@
 #director-profile #profile-text.appear {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* -------------------------------------
+レスポンシブ
+------------------------------------- */
+@media (max-width: 599px) {
+ 
+  .contain {
+    width: 100%;
+  }
+
+  /* ----------------------------
+  テキスト部分
+  ---------------------------- */
+  #about {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #about .text {
+    font-size: 15px;
+    line-height: 4;
+    letter-spacing: 0.1em;
+  }
+
+  /*-----------------------------
+  ディレクター部分
+  ----------------------------- */
+
+  /* 顔写真 */
+  #director-profile {
+    margin-bottom: 30px;
+  }
+
+  #director-profile .face-photo #face {
+    width: 50%;
+    height: 45vh;
+  }
+
+  /* 氏名 */
+  #director-profile #title-name {
+    width: 50%;
+  }
+
+
+  #director-profile #title-name p:nth-child(1) {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+  }
+  
+  #director-profile #title-name p:nth-child(2) {
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+  }
+
+  /* 経歴 */
+  #director-profile #profile-text {
+    width: 50%;
+    margin: 20px auto 0;
+    font-size: 14px;
+  }
 }
