@@ -81,7 +81,6 @@ img {
   margin-left: 15px;
 }
 
-
 .product-image .photo #btnav .current {
   background: #999;
 }
@@ -193,7 +192,6 @@ img {
   background-size: cover;
 }
 
-
 #detail .flex .herb-image .annotation {
   text-align: left;
   background: white;
@@ -201,6 +199,10 @@ img {
   margin: 0 auto;
   padding: 10px;
 }
+
+/* -------------------------------------
+3つの特徴
+------------------------------------- */
 
 #detail .flex .detail-text {
   width: 50%;
@@ -221,7 +223,6 @@ img {
   width: 100%;
   margin: 40px 0;
 }
-
 
 #all-colors .color-chert {
   width: 100%;
@@ -268,6 +269,141 @@ img {
   width: 85%;
   margin: 20px auto 0;
   font-size: 13px;
-
 }
 
+
+
+/* -----------------------------------
+レスポンシブ
+----------------------------------- */
+@media (max-width: 599px) {
+  
+  .contain {
+    width: 100%;
+  }
+
+  #product-page h2 {
+    font-size: 20px;
+  }
+
+  /* --------------------------------
+  　商品画像・商品名・価格・キャッチコピー
+  -------------------------------- */
+  .product-image {
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  .product-image .photo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-image .product-info {
+    width: 100%;
+  }
+
+  .product-image .product-info h4 {
+    font-size: 18px;
+  }
+  
+  .product-image .product-info #price {
+    font-size: 18px;
+  }
+  
+  .product-image .product-info #price span {
+    font-size: 12px;
+  }
+  
+  .product-image .product-info #copy {
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+  }
+
+
+  /* ---------------------------------
+  商品の特徴
+  --------------------------------- */
+  #detail .flex {
+    width: 100%;
+    flex-direction: column;
+    margin: 20px auto 0;
+  }
+
+  #detail .flex .herb-image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #detail .flex .herb-image .image {
+    width: 100%;
+  }
+
+  #detail .flex .herb-image .image #coconut {
+    width: 40%;
+    height: 20vh;
+  }
+
+  #detail .flex .herb-image .image #flower {
+    width: 40%;
+    height: 20vh;
+  }
+
+  #detail .flex .herb-image .annotation {
+    width: 100%;
+  }
+  
+  #detail .flex .detail-text {
+    width: 100%;
+    padding: 25px;
+  }
+  
+  #detail .flex .detail-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+
+  /* --------------------------------
+  カラー展開
+  -------------------------------- */
+  #all-colors .color-chert {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  #all-colors .color-chert .color {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  #all-colors .color-chert .color img {
+    width: 40%;
+  }
+
+  #all-colors .color-chert .color .explanation {
+    width: 60%;
+    height: 90%;
+    margin: auto 0;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #all-colors .color-chert .color .explanation h4 {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  
+  #all-colors .color-chert .color .explanation p {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-size: 13px;
+  }
+}
